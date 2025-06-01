@@ -4,9 +4,9 @@ import React from 'react'
 function Navbar(props) {
   return (
     <>
-        <nav className={`navbar navbar-expand-lg navbar-${props.mode =="dark" ? "light" : "dark"} bg-${props.mode ? "light" : "dark"}`}>
+        <nav className={`navbar sticky-top shadow-lg navbar-expand-lg  navbar-${props.mode =="dark" ? "light" : "dark"} bg-${props.mode ? "light" : "dark"}`}>
         <div className="container-fluid">
-          <a className={`navbar-brand fs-4 fw-semibold text-${props.mode ? "dark" :"light"}`} href="#">
+          <a className={`navbar-brand fs-4 fw-semibold text-${props.mode ? "dark" :"light"}`} href="/">
             Movie<i className="bi bi-search text-primary"></i>Finder
           </a>
           <button
@@ -49,7 +49,7 @@ function Navbar(props) {
               />
               <label
                 className={`form-check-label me-3 ms-2 fs-5 text-${props.mode ? "dark" :"light"}`}
-                for="flexSwitchCheckChecked"
+                htmlFor="flexSwitchCheckChecked"
               >
                 Dark Mode
               </label>
