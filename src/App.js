@@ -30,7 +30,7 @@ function App() {
       else{
         setProgress(30);
       let data = await fetch(
-        `http://www.omdbapi.com/?apikey=e2104319&t=${inputData}`
+        `https://www.omdbapi.com/?apikey=e2104319&t=${inputData}`
       );
       let parsedData = await data.json();
 
